@@ -11,7 +11,7 @@ pa() {
 random
 echo -e -n "Enter password:\033[0m "
 read p
-case $p in
+case \$p in
 $a)bash ;;
 *)random;echo "error password";pa ;;
 esac
@@ -26,7 +26,7 @@ pa() {
 random
 echo -e -n "Enter password:\033[0m "
 read p
-case $p in
+case \$p in
 $a)zsh ;;
 *)random;echo "error password";pa ;;
 esac
